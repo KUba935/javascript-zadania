@@ -72,4 +72,17 @@ if (listItems.length >= 3) {
 }
 
 // Zadanie 16
+function addElement() {
+    var list = document.querySelector('details > ul');
+    var newItem = document.createElement('li');
+    newItem.textContent = 'Nowy element';
+    list.insertBefore(newItem, list.firstChild);
+}
 
+// Zadanie 17
+function removeElements() {
+    var listItems = document.querySelectorAll('ul > li');
+    for (var i = 0; i < listItems.length; i+=) {
+      listitems[i].remove()
+    }
+  }
