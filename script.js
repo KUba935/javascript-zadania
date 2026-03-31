@@ -81,8 +81,27 @@ function addElement() {
 
 // Zadanie 17
 function removeElements() {
-    var listItems = document.querySelectorAll('ul > li');
-    for (var i = 0; i < listItems.length; i+=) {
-      listitems[i].remove()
-    }
+  var listItems = document.querySelectorAll('details > summary > ul > li');
+  for (var i = 0; i < listItems.length; i += 2) {
+    listItems[i].remove()
   }
+}
+
+// Zadanie 18
+function addParagraph(event) {
+  event.preventDefault();
+  var text = document.querySelector('#newParagraph').value;
+  var newParagraph = document.createElement('p');
+  newParagraph.textContent = text;
+  document.querySelector('section').appendChild(newParagraph);
+  var reset = document.querySelector('#newParagraph').value = "";
+}
+
+// Zadanie 19
+const tekst = document.querySelector(".title");
+tekst.textContent = "DOM TRANING Arena";
+
+// Zadanie 20
+
+
+
