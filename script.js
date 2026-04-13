@@ -102,6 +102,13 @@ const tekst = document.querySelector(".title");
 tekst.textContent = "DOM TRANING Arena";
 
 // Zadanie 20
+const item = document.querySelector('.nav-item a')
+item.firstChild.textContent = 'Start'
+
+// Zadanie 21
+const lista = document.querySelector(".menu-list li")
+const text = lista.textContent;
+console.log(text);
 
 
 
