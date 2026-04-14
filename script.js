@@ -110,5 +110,92 @@ const lista = document.querySelector(".menu-list li")
 const text = lista.textContent;
 console.log(text);
 
+// Zadanie 22
+const header = document.querySelector('.card.highlight')
+header.classList.add('.active')
+
+// Zadanie 23
+const card = document.querySelector('.card')
+const header = document.querySelector('.card-header')
+card.textContent = "Zmieniona karta"
+
+// Zadanie 24
+const p = document.querySelector('details > .info-text')
+p.textContent = "tekst"
+
+// Zadanie 25
+const input = document.querySelector('input[name="name"]')
+input.value = 'Jan'
+
+// Zadanie 26
+const select = document.querySelector(".select")
+select.value = "de"
+
+// Zadanie 27
+const input = document.querySelector("input[type='checkbox']")
+input.checked = true
+
+// Zadanie 28
+const p = document.querySelector("deep-text")
+p.classList.add('.highlight')
+
+// Zadanie 29
+const li = document.querySelector("li")
+const list = document.querySelector("#dynamic-list")
+li.textContent = 'Nowy element'
+list.appendChild(li)
+
+// Zadanie 30
+const li = document.createElement('li')
+const li2 = document.createElement('li')
+const li3 = document.createElement('li')
+li.textContent = 'tekst'
+li2.textContent = 'tekst2'
+li3.textContent = 'tekst3'
+const menu_list = document.querySelector('.menu-list')
+menu_list.appendChild(li)
+menu_list.appendChild(li2)
+menu_list.appendChild(li3)
+
+// Zadanie 31
+const div = document.createElement('div')
+div.classList.add('card')
+div.textContent = 'pies'
+const card_section = document.querySelector('.cards-section')
+card_section.appendChild(div)
+
+// Zadanie 32
+const box = document.createElement('div')
+box.classList.add('box')
+box.textContent = 'tekst'
+const boxes_container = document.querySelector('.boxes-container')
+boxes_container.append(box)
+
+// Zadanie 33
+const p = document.createElement('p')
+const dynamic_area = document.querySelector('.dynamic-area')
+p.textContent = 'dowolny tekst'
+dynamic_area.appendChild(p)
+
+// Zadanie 34
+const box = document.createElement('div')
+const insertion_container = document.querySelector('#insertion-container')
+box.textContent = 'Boksik'
+insertion_container.prepend(box)
+
+// Zadanie 35
+const li = document.createElement('li')
+const dynamic_list = document.querySelector('#dynamic-list')
+li.textContent = 'lista'
+dynamic_list.prepend(li)
+
+// Zadanie 36
+const card_header = document.querySelectorAll('card-header')
+
+card_header.forEach(card_header => {
+  const span = document.createElement('span')
+  card_header.textContent = 'jjjjjj'
+  card_header.appendChild(span)
+})
 
 
