@@ -198,4 +198,22 @@ card_header.forEach(card_header => {
   card_header.appendChild(span)
 })
 
+// Zadanie 37
+const p = document.createElement('p')
+const details = document.querySelector('details')
+p.textContent = 'tekscik'
+details.appendChild(p)
+
+// Zadanie 38
+const button = document.createElement('button')
+const playground = document.querySelector('.playground')
+button.textContent = 'przycisk'
+playground.appendChild(button)
+
+// Zadanie 39
+const removable = document.querySelectorAll('.removable')
+removable.forEach((remo) => {
+  remo.removeChild(remo)
+})
+
 
