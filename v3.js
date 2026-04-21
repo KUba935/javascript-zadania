@@ -77,3 +77,9 @@ tr.appendChild(td4)
 tabela.appendChild(tr)
 
 // Zadanie 19
+const paragraf = document.createElement("p")
+paragraf.textContent = "tekst"
+const noc = document.querySelector("#forms-demo")
+noc.prepend(paragraf)
+
+// Zadanie 20
