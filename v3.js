@@ -83,3 +83,12 @@ const noc = document.querySelector("#forms-demo")
 noc.prepend(paragraf)
 
 // Zadanie 20
+const cos = document.createElement("li")
+const cos2 = document.createElement("li")
+const cos3 =  document.createElement("li")
+const skill = document.querySelector("#skill-list")
+skill.appendChild(cos)
+skill.appendChild(cos2)
+skill.appendChild(cos3)
+
+// Zadanie 21
