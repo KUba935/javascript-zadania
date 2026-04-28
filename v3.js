@@ -199,5 +199,5 @@ drew.classList.remove("nest")
 const wwe = document.querySelector(".success")
 wwe.style.backgroundColor = "green"
 
-// Zadanie 43
+
 
